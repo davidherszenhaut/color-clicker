@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang = "en-US">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Color Clicker by David Herszenhaut">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="subject" content="Color Clicker by David Herszenhaut">
+
+    <title>Color Clicker</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+
+    <!--
+
+        TODO
+
+         - make multiplier x/contribution % pop-ups
+         - make achievements/upgrades divs
+
+    -->
+
+</head>
+
+<body>
+
+    <main>
+
+        <!-- CLICKER WRAPPER -->
+
+        <div id="clicker-wrapper">
+
+            <div id="clicker-border">
+
+                <!-- CLICKER -->
+
+                <div id="clicker">
+
+                </div>
+
+                <!-- END of CLICKER -->
+
+            </div>
+
+            <!-- CLICKER INFORMATION -->
+
+            <h1 id="clicks">0</h1>
+
+            <h5 id="per-second">0 per second</h5>
+
+            <!-- END of CLICKER INFORMATION -->
+
+        </div>
+
+        <!-- END of CLICKER WRAPPER -->
+
+        <!-- BUILDING WRAPPER -->
+
+        <div id="building-wrapper">
+
+            <!-- RED ROW -->
+
+            <div class="building-row">
+
+                <div class="building-circle-wrapper">
+
+                    <div id="red" class="building-circle cannot-be-bought"></div>
+
+                </div>
+
+                <div class="building-count">
+
+                    <h2 id="red-count">0</h2>
+
+                    <h5 id="red-cost">cost: 1</h5>
+
+                </div>
+
+            </div>
+
+            <!-- END of RED ROW -->
+
+            <!-- ORANGE ROW -->
+
+            <div class="building-row">
+
+                <div class="building-circle-wrapper">
+
+                    <div id="orange" class="building-circle cannot-be-bought"></div>
+
+                </div>
+
+                <div class="building-count">
+
+                    <h2 id="orange-count">0</h2>
+
+                    <h5 id="orange-cost">cost: 2</h5>
+
+                </div>
+
+            </div>
+
+            <!-- END of ORANGE ROW -->
+
+            <!-- YELLOW ROW -->
+
+            <div class="building-row">
+
+                <div class="building-circle-wrapper">
+
+                    <div id="yellow" class="building-circle cannot-be-bought"></div>
+
+                </div>
+
+                <div class="building-count">
+
+                    <h2 id="yellow-count">0</h2>
+
+                    <h5 id="yellow-cost">cost: 4</h5>
+
+                </div>
+
+            </div>
+
+            <!-- END of YELLOW ROW -->
+
+            <!-- GREEN ROW -->
+
+            <div class="building-row">
+
+                <div class="building-circle-wrapper">
+
+                    <div id="green" class="building-circle cannot-be-bought"></div>
+
+                </div>
+
+                <div class="building-count">
+
+                    <h2 id="green-count">0</h2>
+
+                    <h5 id="green-cost">cost: 8</h5>
+
+                </div>
+
+            </div>
+
+            <!-- END of GREEN ROW -->
+
+            <!-- BLUE ROW -->
+
+            <div class="building-row">
+
+                <div class="building-circle-wrapper">
+
+                    <div id="blue" class="building-circle cannot-be-bought"></div>
+
+                </div>
+
+                <div class="building-count">
+
+                    <h2 id="blue-count">0</h2>
+
+                    <h5 id="blue-cost">cost: 16</h5>
+
+                </div>
+
+            </div>
+
+            <!-- END of BLUE ROW -->
+
+            <!-- INDIGO ROW -->
+
+            <div class="building-row">
+
+                <div class="building-circle-wrapper">
+
+                    <div id="indigo" class="building-circle cannot-be-bought"></div>
+
+                </div>
+
+                <div class="building-count">
+
+                    <h2 id="indigo-count">0</h2>
+
+                    <h5 id="indigo-cost">cost: 32</h5>
+
+                </div>
+
+            </div>
+
+            <!-- END of INDIGO ROW -->
+
+            <!-- VIOLET ROW -->
+
+            <div class="building-row">
+
+                <div class="building-circle-wrapper">
+
+                    <div id="violet" class="building-circle cannot-be-bought"></div>
+
+                </div>
+
+                <div class="building-count">
+
+                    <h2 id="violet-count">0</h2>
+
+                    <h5 id="violet-cost">cost: 64</h5>
+
+                </div>
+
+            </div>
+
+            <!-- END of VIOLET ROW -->
+
+        </div>
+
+        <!-- END of BUILDING WRAPPER -->
+
+    </main>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
