@@ -97,6 +97,7 @@ main {
     flex-direction: column;
     justify-content: space-around;
     width: 40%;
+    position: relative;
 }
 
 .building-row {
@@ -159,6 +160,28 @@ main {
     line-height: 50%;
 }
 
+#building-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.stats-row {
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #34495e;
+    transition: all 0.5s ease;
+    width: 200px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.shown {
+    opacity: 1;
+}
+
 @media screen and (max-width: 1000px) {
     #clicker-border, #clicker {
         height: 200px;
@@ -167,6 +190,9 @@ main {
     .building-circle {
         height: 60px;
         width: 60px;
+    }
+    .stats-row h6 {
+        font-size: .6em;
     }
 }
 
@@ -179,6 +205,9 @@ main {
         height: 40px;
         width: 40px;
     }
+    .stats-row h6 {
+        font-size: 0.5em;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -189,5 +218,8 @@ main {
     .building-circle {
         height: 30px;
         width: 30px;
+    }
+    .stats-row h6 {
+        font-size: 0.5em;
     }
 }

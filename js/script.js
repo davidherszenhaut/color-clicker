@@ -74,6 +74,9 @@ class Building {
      */
     updateContribution() {
         this.contribution = (((this.count * this.production) / parseInt(document.getElementById("per-second").innerHTML.match(/\d/g).join(""))) * 100).toFixed(2);
+        if (this.count == 0) {
+            this.contribution = 0;
+        }
     }
 
     /**
@@ -94,6 +97,8 @@ class Building {
     updateHTML() {
         document.getElementById(this.color + "-count").innerHTML = this.count;
         document.getElementById(this.color + "-cost").innerHTML = "cost: " + this.currentCost;
+        document.getElementById(this.color + "-multiplier").innerHTML = "multiplier: " + this.multiplier + "x";
+        document.getElementById(this.color + "-contribution").innerHTML = "contribution: " + this.contribution + "%";
     }
 
 }
@@ -144,6 +149,103 @@ function incrementBuilding(color) {
         }
     }
 }
+
+// function addStatsHover() {
+//     for (var i = 0; i < buildings.length; i++) {
+//         document.getElementById(buildings[i].color).addEventListener("mouseenter", function() {
+//             document.getElementById(buildings[i].color + "-stats").classList.remove("hidden");
+//             document.getElementById(buildings[i].color + "-stats").classList.add("shown");
+//         })
+
+//         document.getElementById(buildings[i].color).addEventListener("mouseleave", function() {
+//             document.getElementById(buildings[i].color + "-stats").classList.add("hidden");
+//             document.getElementById(buildings[i].color + "-stats").classList.remove("shown");
+//         })
+//     }
+//     colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+//     for (var i = 0; i < colors.length; i++) {
+//         document.getElementById(colors[i]).addEventListener("mouseenter", function() {
+//             document.getElementById(colors[i] + "-stats").classList.remove("hidden");
+//             document.getElementById(colors[i] + "-stats").classList.add("shown");
+//         })
+//         document.getElementById(colors[i]).addEventListener("mouseleave", function() {
+//             document.getElementById(colors[i] + "-stats").classList.add("hidden");
+//             document.getElementById(colors[i] + "-stats").classList.remove("shown");
+//         })
+//     }
+// }
+
+// addStatsHover();
+
+document.getElementById("red").addEventListener("mouseenter", function() {
+    document.getElementById("red-stats").classList.remove("hidden");
+    document.getElementById("red-stats").classList.add("shown");
+});
+
+document.getElementById("red").addEventListener("mouseleave", function() {
+    document.getElementById("red-stats").classList.add("hidden");
+    document.getElementById("red-stats").classList.remove("shown");
+});
+
+document.getElementById("orange").addEventListener("mouseenter", function() {
+    document.getElementById("orange-stats").classList.remove("hidden");
+    document.getElementById("orange-stats").classList.add("shown");
+});
+
+document.getElementById("orange").addEventListener("mouseleave", function() {
+    document.getElementById("orange-stats").classList.add("hidden");
+    document.getElementById("orange-stats").classList.remove("shown");
+});
+
+document.getElementById("yellow").addEventListener("mouseenter", function() {
+    document.getElementById("yellow-stats").classList.remove("hidden");
+    document.getElementById("yellow-stats").classList.add("shown");
+});
+
+document.getElementById("yellow").addEventListener("mouseleave", function() {
+    document.getElementById("yellow-stats").classList.add("hidden");
+    document.getElementById("yellow-stats").classList.remove("shown");
+});
+
+document.getElementById("green").addEventListener("mouseenter", function() {
+    document.getElementById("green-stats").classList.remove("hidden");
+    document.getElementById("green-stats").classList.add("shown");
+});
+
+document.getElementById("green").addEventListener("mouseleave", function() {
+    document.getElementById("green-stats").classList.add("hidden");
+    document.getElementById("green-stats").classList.remove("shown");
+});
+
+document.getElementById("blue").addEventListener("mouseenter", function() {
+    document.getElementById("blue-stats").classList.remove("hidden");
+    document.getElementById("blue-stats").classList.add("shown");
+});
+
+document.getElementById("blue").addEventListener("mouseleave", function() {
+    document.getElementById("blue-stats").classList.add("hidden");
+    document.getElementById("blue-stats").classList.remove("shown");
+});
+
+document.getElementById("indigo").addEventListener("mouseenter", function() {
+    document.getElementById("indigo-stats").classList.remove("hidden");
+    document.getElementById("indigo-stats").classList.add("shown");
+});
+
+document.getElementById("indigo").addEventListener("mouseleave", function() {
+    document.getElementById("indigo-stats").classList.add("hidden");
+    document.getElementById("indigo-stats").classList.remove("shown");
+});
+
+document.getElementById("violet").addEventListener("mouseenter", function() {
+    document.getElementById("violet-stats").classList.remove("hidden");
+    document.getElementById("violet-stats").classList.add("shown");
+});
+
+document.getElementById("violet").addEventListener("mouseleave", function() {
+    document.getElementById("violet-stats").classList.add("hidden");
+    document.getElementById("violet-stats").classList.remove("shown");
+});
 
 /**
  * Adds the clicks produced from each building to #clicks every second.
